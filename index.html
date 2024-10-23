@@ -65,13 +65,13 @@
         }
 
         nav a {
-            margin: 0 25px;
+            margin: 0 20px;
             text-decoration: none;
             color: #ffffff;
             font-weight: bold;
             font-size: 1.1em;
             transition: color 0.3s ease, background-color 0.3s ease;
-            padding: 10px 20px;
+            padding: 10px 15px;
             border-radius: 5px;
         }
 
@@ -126,39 +126,9 @@
         /* Emphasis */
         em {
             font-style: italic;
-            color: #e74c3c;
         }
 
-        /* Tables */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 40px 0;
-            table-layout: fixed;
-            word-wrap: break-word;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.05);
-        }
-
-        table th, table td {
-            border: 1px solid #ddd;
-            padding: 20px;
-            text-align: left;
-            font-size: 1em;
-        }
-
-        table th {
-            background-color: #1abc9c;
-            color: #ffffff;
-            font-size: 1.2em;
-        }
-
-        table tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-
-        table tr:hover {
-            background-color: #f1f1f1;
-        }
+        /* Tables - Removed as per instructions */
 
         /* References */
         .references {
@@ -201,18 +171,20 @@
 
         /* Charts and Images */
         .chart, .image {
-            text-align: center;
+            display: flex;
+            align-items: center;
             margin: 50px 0;
         }
 
         .chart img, .image img {
-            max-width: 80%;
+            width: 45%;
             height: auto;
             border: 2px solid #ddd;
-            padding: 15px;
+            padding: 10px;
             background-color: #ffffff;
             border-radius: 8px;
             transition: transform 0.3s ease;
+            margin-right: 5%;
         }
 
         .chart img:hover, .image img:hover {
@@ -220,7 +192,7 @@
         }
 
         .chart p, .image p {
-            margin-top: 15px;
+            width: 50%;
             font-size: 1em;
             color: #7f8c8d;
         }
@@ -284,17 +256,18 @@
                 font-size: 1.8em;
             }
 
-            table th, table td {
-                padding: 15px;
-            }
-
             .highlight {
                 padding: 20px 25px;
                 font-size: 1.1em;
             }
 
             .chart img, .image img {
-                max-width: 90%;
+                width: 40%;
+                margin-right: 10%;
+            }
+
+            .chart p, .image p {
+                width: 50%;
             }
         }
 
@@ -325,17 +298,24 @@
                 font-size: 1.5em;
             }
 
-            table th, table td {
-                padding: 10px;
-            }
-
             .highlight {
                 padding: 15px 20px;
                 font-size: 1em;
             }
 
+            .chart, .image {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
             .chart img, .image img {
-                max-width: 100%;
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+
+            .chart p, .image p {
+                width: 100%;
             }
 
             .sidebar {
@@ -482,45 +462,19 @@
             The integration of digital currencies, particularly China's <em>Digital Yuan</em>, presents a technologically advanced alternative to traditional Western currencies. The Digital Yuan's adoption rate, with <em>40%</em> of international transactions in BRICS using the Digital Yuan by 2023, highlights its growing significance. This technological advancement not only enhances transactional efficiency and security but also reduces the euro and the dollar's dominance in international finance.
         </p>
 
-        <h3>Technical Analysis of Currency Impact</h3>
+        <h3>BRICS Influence and its Global Expansion</h3>
         <p>
-            From a technical perspective, the actions taken by BRICS disrupt the traditional mechanisms that sustain the euro and the dollar's dominance. The reduction in transactional demand through local currency settlements directly impacts the liquidity and value of these Western currencies. As the dollar's global usage wanes, its value may face downward pressure, leading to decreased confidence and investment in dollar-denominated assets. The Eurozone, grappling with economic disparities among member states, may find its currency further destabilized as BRICS offers more attractive alternatives for international trade and reserves.
+            The overarching influence of BRICS extends beyond mere economic metrics, permeating various facets of global governance and technological standards. As BRICS nations continue to assert their economic prowess, their influence in setting international standards and norms becomes increasingly pronounced. This shift has profound implications for Western economies, which have traditionally held sway over global financial and technological frameworks.
         </p>
-        <table>
-            <thead>
-                <tr>
-                    <th>Mechanism</th>
-                    <th>Impact on Western Currencies</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Trade Settlement in Local Currencies</td>
-                    <td>Reduces transactional demand for the euro and dollar, potentially leading to their depreciation and decreased global liquidity.</td>
-                </tr>
-                <tr>
-                    <td>BRICS Payment System (BPS)</td>
-                    <td>Bypassing SWIFT diminishes the euro and dollar's role in international payments, potentially reducing their use as intermediary currencies.</td>
-                </tr>
-                <tr>
-                    <td>Currency Swap Agreements</td>
-                    <td>Enhances liquidity among BRICS nations without relying on Western currencies, thereby strengthening economic resilience within the bloc.</td>
-                </tr>
-                <tr>
-                    <td>Issuance of Digital Currencies</td>
-                    <td>Provides technologically advanced alternatives to traditional currencies, increasing transactional efficiency and security, and reducing reliance on the euro and dollar.</td>
-                </tr>
-                <tr>
-                    <td>New Development Bank (NDB) Funding</td>
-                    <td>Offers financing options independent of Western-dominated financial institutions, reducing the influence of the euro and dollar in global infrastructure projects.</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <div class="chart">
-            <img src="images/CleanShot 2024-10-23 at 21.49.09.png" alt="Impact of BRICS Policies on Western Currencies">
-            <p>Figure 2: BRICS Influence Across the Globe</p>
-        </div>
+        <p>
+            BRICS' influence is evident in their active participation in global institutions and forums. By advocating for a more multipolar world order, BRICS seeks to recalibrate global power dynamics, reducing Western dominance in international policymaking. This strategic positioning is complemented by their investments in critical infrastructure projects worldwide, further cementing their role as key players in global development.
+        </p>
+        <p>
+            Furthermore, BRICS' commitment to sustainable development and green technologies positions them as frontrunners in addressing global environmental challenges. This focus not only aligns with global sustainability goals but also provides BRICS nations with a competitive edge in emerging green markets, potentially sidelining Western countries that may be slower to adapt.
+        </p>
+        <p>
+            In addition to economic and technological influence, BRICS' diplomatic initiatives aim to foster closer ties with developing nations, creating a broad coalition that can challenge Western hegemony. This diplomatic outreach enhances BRICS' geopolitical clout, enabling them to influence global policies and alliances in ways that favor their strategic interests.
+        </p>
 
         <blockquote>
             "The concerted efforts towards financial autonomy by BRICS nations signify a paradigm shift in global monetary dynamics, potentially leading to a reconfiguration of international reserve assets and transactional frameworks." — Dr. Elena Martinez, International Finance Expert
