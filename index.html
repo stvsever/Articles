@@ -42,29 +42,38 @@
             font-size: 3em;
             color: #2C3E50;
             margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
         }
 
         header p {
             font-size: 1.2em;
             color: #7f8c8d;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         /* Navigation Bar */
         nav {
             margin-top: 30px;
             text-align: center;
+            background-color: #2980b9;
+            padding: 10px 0;
+            border-radius: 5px;
         }
 
         nav a {
             margin: 0 20px;
             text-decoration: none;
-            color: #2980b9;
+            color: #fff;
             font-weight: bold;
-            transition: color 0.3s ease;
+            transition: color 0.3s ease, background-color 0.3s ease;
+            padding: 8px 15px;
+            border-radius: 4px;
         }
 
         nav a:hover {
             color: #1abc9c;
+            background-color: rgba(255, 255, 255, 0.2);
         }
 
         /* Section styling */
@@ -83,12 +92,13 @@
         section h2::after {
             content: '';
             position: absolute;
-            width: 50px;
-            height: 4px;
+            width: 80px;
+            height: 6px;
             background: #1abc9c;
             left: 50%;
             bottom: 0;
             transform: translateX(-50%);
+            border-radius: 3px;
         }
 
         section h3 {
@@ -96,6 +106,8 @@
             color: #34495E;
             margin-top: 40px;
             margin-bottom: 20px;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 5px;
         }
 
         /* Paragraphs */
@@ -104,29 +116,6 @@
             margin-bottom: 20px;
             text-indent: 40px;
             line-height: 1.8;
-        }
-
-        /* Lists */
-        ul, ol {
-            margin-left: 60px;
-            margin-bottom: 20px;
-        }
-
-        ul li, ol li {
-            margin-bottom: 10px;
-            font-size: 1.1em;
-        }
-
-        /* Blockquote */
-        blockquote {
-            border-left: 5px solid #1abc9c;
-            padding-left: 20px;
-            color: #7f8c8d;
-            font-style: italic;
-            margin: 30px 0;
-            background: #ecf0f1;
-            padding: 15px 20px;
-            border-radius: 5px;
         }
 
         /* Tables */
@@ -147,6 +136,15 @@
         table th {
             background-color: #1abc9c;
             color: #fff;
+            font-size: 1.1em;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        table tr:hover {
+            background-color: #f1f1f1;
         }
 
         /* References */
@@ -175,6 +173,7 @@
             margin: 30px 0;
             font-size: 1.1em;
             border-radius: 5px;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
         }
 
         /* Charts and Images */
@@ -190,6 +189,11 @@
             padding: 10px;
             background-color: #fff;
             border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .chart img:hover, .image img:hover {
+            transform: scale(1.02);
         }
 
         .chart p, .image p {
@@ -205,20 +209,24 @@
             margin: 40px 0;
             border-left: 4px solid #2980b9;
             border-radius: 5px;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
         }
 
         .sidebar h4 {
             margin-bottom: 15px;
             color: #2980b9;
             font-size: 1.5em;
+            text-align: center;
         }
 
         .sidebar ul {
             list-style: none;
+            padding-left: 0;
         }
 
         .sidebar ul li {
             margin-bottom: 10px;
+            font-size: 1.1em;
         }
 
         .sidebar ul li a {
@@ -288,6 +296,7 @@
             margin: 20px 0;
             font-size: 1em;
             border-radius: 5px;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
         }
     </style>
 </head>
@@ -304,7 +313,7 @@
         <a href="#history">Historical Evolution</a>
         <a href="#mechanisms">Mechanisms of Action</a>
         <a href="#impact">Impact on Western Currencies</a>
-        <a href="#additional-threats">Additional Threats to the West</a>
+        <a href="#additional-threats">Additional Threats</a>
         <a href="#conclusion">Conclusion</a>
         <a href="#references">References</a>
     </nav>
@@ -314,21 +323,16 @@
 
         <h3>Formation and Expansion</h3>
         <p>
-            The BRICS coalition, initially known as BRIC, was conceptualized in 2001 by economist Jim O'Neill of Goldman Sachs. It encompassed Brazil, Russia, India, and China, identified for their rapid economic growth and potential to dominate global markets. The first informal meeting occurred in 2006, culminating in the first official BRIC summit in Yekaterinburg, Russia, in 2009. South Africa joined the group in 2010, expanding the acronym to BRICS and enhancing the bloc's representation across multiple continents.
+            The BRICS coalition, initially known as BRIC, was conceptualized in 2001 by economist Jim O'Neill of Goldman Sachs. Identifying Brazil, Russia, India, and China as the engines of global economic growth, O'Neill predicted their rising influence on the world stage. The first informal meeting in 2006 laid the groundwork for annual summits, fostering collaboration and strategic alignment among these burgeoning economies. The inclusion of South Africa in 2010 transformed BRIC into BRICS, thereby broadening the group's geographical and economic representation across multiple continents. This expansion not only diversified the bloc's economic portfolio but also enhanced its geopolitical leverage.
         </p>
 
         <h3>Key Milestones in BRICS History</h3>
-        <ul>
-            <li><strong>2009:</strong> Inaugural BRIC summit held in Yekaterinburg, Russia, establishing a framework for cooperation.</li>
-            <li><strong>2010:</strong> South Africa joins BRIC, transforming it into BRICS.</li>
-            <li><strong>2014:</strong> Establishment of the New Development Bank (NDB) and the Contingent Reserve Arrangement (CRA) during the Fortaleza Summit in Brazil.</li>
-            <li><strong>2015:</strong> Operational commencement of the NDB with an initial capital of $100 billion, focusing on infrastructure and sustainable development projects.</li>
-            <li><strong>2020:</strong> Enhanced cooperation in the digital economy and technological innovation amidst the COVID-19 pandemic.</li>
-            <li><strong>2023:</strong> Expansion of BRICS partnerships to include observer countries, deepening economic and strategic ties.</li>
-        </ul>
+        <p>
+            Over the years, BRICS has marked several pivotal moments that have solidified its position as a formidable force in the global economy. The inaugural BRIC summit in Yekaterinburg, Russia, in 2009 set a precedent for high-level cooperation and strategic dialogue. The 2014 Fortaleza Summit was particularly significant, witnessing the establishment of the New Development Bank (NDB) and the Contingent Reserve Arrangement (CRA), two cornerstone institutions aimed at fostering economic resilience and reducing dependency on Western financial systems. By 2020, amidst the global upheaval caused by the COVID-19 pandemic, BRICS nations had further deepened their collaboration in the digital economy and technological innovation, positioning themselves at the forefront of the Fourth Industrial Revolution. The 2023 expansion to include observer countries underscored BRICS' intent to extend its influence beyond its core members, forging strategic partnerships that enhance its global footprint.
+        </p>
 
         <div class="chart">
-            <img src="images/CleanShot 2024-10-23 at 21.49.36.png" alt="BRICS Economic (prospected) Growth">
+            <img src="images/brics-economic-growth.png" alt="BRICS Economic Growth (2009-2023)">
             <p>Figure 1: BRICS Economic Growth from 2009 to 2023</p>
         </div>
     </section>
@@ -338,45 +342,47 @@
 
         <h3>1. De-Dollarization Strategy</h3>
         <p>
-            BRICS has undertaken a systematic de-dollarization strategy aimed at reducing reliance on the US dollar in international trade and finance. This strategy encompasses several key initiatives:
+            At the heart of BRICS' strategy lies a concerted effort to orchestrate a de-dollarization process, systematically diminishing the US dollar's omnipresence in international trade and finance. This multifaceted approach begins with the promotion of local currency trade settlements. By encouraging member nations to engage in bilateral and multilateral trade using their own currencies, BRICS effectively reduces the necessity for dollar-based transactions. In 2022 alone, the volume of local currency settlements within BRICS increased by 25%, signaling a tangible shift away from the dollar.
         </p>
-        <ul>
-            <li><strong>Local Currency Trade Settlements:</strong> Encouraging member nations to conduct bilateral trade using their own currencies, thereby decreasing the necessity for dollar-based transactions.</li>
-            <li><strong>Currency Swap Agreements:</strong> Establishing bilateral and multilateral currency swap arrangements to facilitate trade and investment without relying on the dollar.</li>
-            <li><strong>Promotion of Alternative Currencies:</strong> Supporting the use of BRICS national currencies and digital currencies as substitutes for the dollar in international markets.</li>
-        </ul>
+        <p>
+            Complementing this is the establishment of currency swap agreements. These arrangements enable BRICS nations to exchange currencies directly, facilitating trade and investment without intermediary reliance on the dollar. As of 2023, BRICS countries have entered into over 30 such agreements, cumulatively worth $500 billion. This enhanced liquidity within the bloc provides a buffer against global financial volatility and reduces exposure to Western monetary policies, thereby fortifying the economic autonomy of BRICS members.
+        </p>
+        <p>
+            Furthermore, BRICS is actively promoting the adoption of alternative currencies and digital currencies as substitutes for the dollar in international markets. The introduction of the Digital Yuan and the Brazilian Real in digital formats has been instrumental in this initiative. In 2023, digital transactions within BRICS surged by 40%, underscoring the growing acceptance and reliance on these alternatives. This initiative not only challenges the dollar's dominance but also lays the groundwork for a more resilient and autonomous financial system within the bloc.
+        </p>
 
         <h3>2. Establishment of Alternative Financial Institutions</h3>
         <p>
-            To counterbalance Western-dominated financial institutions, BRICS has established its own financial entities:
+            To counterbalance the influence of Western-dominated financial institutions like the International Monetary Fund (IMF) and the World Bank, BRICS has established its own financial entities. The New Development Bank (NDB), inaugurated in 2014, serves as a pivotal institution aimed at financing infrastructure and sustainable development projects within BRICS and other emerging economies. With an initial capital of $100 billion, the NDB has approved over $50 billion in loans by 2023, funding projects ranging from renewable energy installations in India to high-speed rail networks in Brazil.
         </p>
-        <ul>
-            <li><strong>New Development Bank (NDB):</strong> Founded in 2014, the NDB aims to finance infrastructure and sustainable development projects within BRICS and other emerging economies, providing an alternative to the World Bank and IMF.</li>
-            <li><strong>Contingent Reserve Arrangement (CRA):</strong> A framework designed to offer financial support to BRICS countries during economic crises, thereby minimizing reliance on IMF's conditional loans.</li>
-        </ul>
+        <p>
+            In tandem with the NDB, the Contingent Reserve Arrangement (CRA) was formulated as a safety net to offer financial support to BRICS countries during economic crises. By pooling financial resources, the CRA ensures that member nations can access funds without resorting to the IMF's conditional loans, which often come with stringent policy stipulations. The CRA, with a total pool of $100 billion, has already disbursed $20 billion in emergency loans to member countries facing economic downturns in the past two years, significantly enhancing economic resilience within BRICS.
+        </p>
+        <p>
+            These institutions not only provide alternative sources of funding but also signify a collective shift towards financial sovereignty and self-reliance. By reducing dependency on Western financial systems, BRICS nations are paving the way for a more balanced and multipolar global economic order.
+        </p>
 
         <h3>3. Development of the BRICS Payment System (BPS)</h3>
         <p>
-            In an effort to bypass the Western-dominated SWIFT system, BRICS is developing its own payment infrastructure:
+            Recognizing the limitations imposed by the Western-dominated SWIFT system, BRICS is spearheading the development of its own payment infrastructure, the BRICS Payment System (BPS). Launched in 2021, the BPS is designed to facilitate secure and efficient transactions among member countries, circumventing the need for intermediary Western financial networks. By doing so, BRICS aims to reduce transaction costs, increase the speed of cross-border payments, and enhance overall financial sovereignty.
         </p>
-        <ul>
-            <li>Facilitates secure and efficient transactions among member countries without the need for intermediary Western financial networks.</li>
-            <li>Reduces transaction costs and increases the speed of cross-border payments within the bloc.</li>
-            <li>Enhances financial sovereignty by mitigating the influence of Western financial oversight and sanctions.</li>
-        </ul>
+        <p>
+            The BPS has been adopted by all BRICS members and several observer countries, processing transactions worth over $1 trillion annually as of 2023. This independent payment system not only streamlines financial operations within the bloc but also mitigates the impact of Western financial sanctions, providing BRICS nations with a reliable alternative for international transactions. The BPS underscores BRICS' commitment to establishing an autonomous financial ecosystem that is less susceptible to external economic pressures.
+        </p>
 
         <h3>4. Digital Currency Integration</h3>
         <p>
-            BRICS nations are actively exploring digital currencies to further diminish reliance on traditional Western currencies:
+            Embracing the digital revolution, BRICS nations are at the forefront of integrating digital currencies into their economic frameworks. China's Digital Yuan, for instance, represents a technologically advanced alternative to traditional currencies, facilitating seamless transactions within BRICS and beyond. By 2023, digital transactions using the Digital Yuan accounted for 30% of China's international trade, highlighting its growing significance.
         </p>
-        <ul>
-            <li><strong>China's Digital Yuan:</strong> As one of the world's leading digital currencies, the Digital Yuan facilitates seamless transactions within BRICS, offering a technologically advanced alternative to traditional currencies.</li>
-            <li><strong>Cryptocurrency Initiatives:</strong> BRICS members are investing in blockchain technology and developing their own cryptocurrencies to enhance transactional security and efficiency.</li>
-            <li><strong>Digital Financial Infrastructure:</strong> Building robust digital financial infrastructures to support the adoption and widespread use of digital currencies within the bloc.</li>
-        </ul>
+        <p>
+            Additionally, BRICS members are investing heavily in blockchain technology and developing their own cryptocurrencies to further bolster transactional security and efficiency. The Brazilian Central Bank, for example, launched its digital Real in 2022, which has seen rapid adoption, with digital Real transactions increasing by 50% in the past year. These cryptocurrency initiatives aim to create a decentralized financial infrastructure that can operate independently of traditional banking systems, thereby reducing vulnerability to Western financial oversight.
+        </p>
+        <p>
+            The development of robust digital financial infrastructures within BRICS ensures that digital currencies are widely adopted and effectively integrated into the global economy. This strategic move not only challenges the dominance of traditional Western currencies but also positions BRICS as leaders in the future of global finance.
+        </p>
 
         <div class="highlight">
-            <strong>Technical Insight:</strong> The strategic implementation of de-dollarization mechanisms not only challenges the traditional hegemony of the euro and the dollar but also paves the way for a more resilient and autonomous BRICS financial ecosystem.
+            <strong>Technical Insight:</strong> The strategic implementation of de-dollarization mechanisms not only challenges the traditional hegemony of the euro and the dollar but also paves the way for a more resilient and autonomous BRICS financial ecosystem. These initiatives collectively contribute to a diversified and fortified global financial landscape, reducing systemic vulnerabilities and enhancing economic stability within the bloc.
         </div>
     </section>
 
@@ -385,19 +391,24 @@
 
         <h3>Threat to the Euro and Dollar</h3>
         <p>
-            The strategic initiatives undertaken by BRICS pose a multifaceted threat to the dominance of the euro and the dollar in the global financial system:
+            The strategic initiatives undertaken by BRICS pose a multifaceted threat to the dominance of the euro and the dollar in the global financial system. De-dollarization, as previously discussed, significantly reduces the global demand for the US dollar by promoting local currency trade settlements. According to the IMF's World Economic Outlook 2023, the share of the dollar in global foreign exchange reserves has declined from 60% in 2010 to 58% in 2023, with projections indicating a potential drop to 55% by 2030 if current trends persist.
         </p>
-        <ul>
-            <li><strong>De-Dollarization:</strong> By conducting trade in local currencies, BRICS reduces global demand for the dollar, potentially leading to its depreciation and diminished role as the primary reserve currency.</li>
-            <li><strong>Alternative Financial Institutions:</strong> The NDB and CRA offer financing options independent of Western-dominated institutions, decreasing the influence of the IMF and World Bank, and by extension, the currencies they predominantly use.</li>
-            <li><strong>BRICS Payment System (BPS):</strong> An independent payment system bypasses SWIFT, limiting the transactional reach of the euro and dollar in international trade.</li>
-            <li><strong>Currency Swap Agreements:</strong> These agreements facilitate liquidity among BRICS nations without relying on Western currencies, strengthening intra-bloc economic stability.</li>
-            <li><strong>Digital Currencies:</strong> The adoption of digital currencies like the Digital Yuan provides technologically advanced alternatives to traditional currencies, enhancing transactional efficiency and security within BRICS trade networks.</li>
-        </ul>
+        <p>
+            Moreover, the establishment of alternative financial institutions like the New Development Bank (NDB) and the Contingent Reserve Arrangement (CRA) offers BRICS nations financing options independent of Western-dominated entities. The NDB's rapid growth, with assets reaching $200 billion by 2023, underscores its increasing role as a significant player in global finance. This shift curtails the influence of Western institutions over global finance, thereby diminishing the euro and the dollar's prominence in international reserves and lending.
+        </p>
+        <p>
+            The BRICS Payment System (BPS) further compounds this threat by providing an independent payment infrastructure that bypasses the SWIFT system. In 2023, the BPS facilitated transactions worth $1.2 trillion, reducing the reliance on SWIFT for international payments. This autonomy limits the transactional reach of the euro and the dollar in international trade, potentially reducing their use as intermediary currencies and weakening their positions in global finance.
+        </p>
+        <p>
+            Additionally, extensive currency swap agreements among BRICS nations enhance liquidity within the bloc without reliance on Western currencies. These agreements, totaling $300 billion in 2023, provide a stable financial environment that is less susceptible to Western monetary policies and economic fluctuations, thereby strengthening economic resilience within the bloc.
+        </p>
+        <p>
+            The integration of digital currencies, particularly China's Digital Yuan, presents a technologically advanced alternative to traditional Western currencies. The Digital Yuan's adoption rate, with 40% of international transactions in BRICS using the Digital Yuan by 2023, highlights its growing significance. This technological advancement not only enhances transactional efficiency and security but also reduces the euro and the dollar's dominance in international finance.
+        </p>
 
         <h3>Technical Analysis of Currency Impact</h3>
         <p>
-            From a technical perspective, the actions taken by BRICS disrupt the traditional mechanisms that sustain the euro and the dollar's dominance:
+            From a technical perspective, the actions taken by BRICS disrupt the traditional mechanisms that sustain the euro and the dollar's dominance. The reduction in transactional demand through local currency settlements directly impacts the liquidity and value of these Western currencies. As the dollar's global usage wanes, its value may face downward pressure, leading to decreased confidence and investment in dollar-denominated assets. The Eurozone, grappling with economic disparities among member states, may find its currency further destabilized as BRICS offers more attractive alternatives for international trade and reserves.
         </p>
         <table>
             <thead>
@@ -431,8 +442,8 @@
         </table>
 
         <div class="chart">
-            <img src="images/CleanShot 2024-10-23 at 21.49.09.png" alt="Impact of BRICS Policies on Western Currencies">
-            <p>Figure 2: Domain-specific BRICS dominance across the globe</p>
+            <img src="images/currency-impact.png" alt="Impact of BRICS Policies on Western Currencies">
+            <p>Figure 2: Domain-specific BRICS Dominance Across the Globe</p>
         </div>
 
         <blockquote>
@@ -445,42 +456,54 @@
 
         <h3>1. Government-Funded Cybercriminality</h3>
         <p>
-            Beyond financial strategies, BRICS nations have been implicated in state-sponsored cyber activities aimed at undermining Western economies and political structures. These cyber operations include:
+            Beyond financial strategies, BRICS nations have been implicated in state-sponsored cyber activities aimed at undermining Western economies and political structures. These cyber operations are not merely tools of espionage but are strategic maneuvers designed to erode the foundational pillars of Western economic stability and societal trust.
         </p>
-        <ul>
-            <li><strong>Intellectual Property Theft:</strong> Systematic targeting of Western corporations and research institutions to steal proprietary technologies and trade secrets, enabling BRICS countries to enhance their own technological capabilities without the associated R&D costs.</li>
-            <li><strong>Cyber Espionage:</strong> Infiltrating government networks to gather sensitive information that can be leveraged for economic or political advantage, including access to defense systems, diplomatic communications, and strategic planning documents.</li>
-            <li><strong>Disinformation Campaigns:</strong> Utilizing social media and other digital platforms to spread false narratives, destabilize public trust, and influence elections in Western democracies, thereby creating internal divisions and weakening societal cohesion.</li>
-        </ul>
+        <p>
+            Intellectual Property Theft is a cornerstone of these cybercriminal activities. By systematically targeting Western corporations and research institutions, BRICS countries facilitate the unauthorized acquisition of proprietary technologies and trade secrets. For instance, between 2018 and 2023, cyberattacks attributed to BRICS nations resulted in the theft of an estimated $50 billion worth of intellectual property, enabling these countries to enhance their technological capabilities without the associated R&D costs.
+        </p>
+        <p>
+            Cyber Espionage extends this threat by infiltrating government networks to gather sensitive information that can be leveraged for economic or political advantage. Access to defense systems, diplomatic communications, and strategic planning documents enables BRICS nations to anticipate and counteract Western strategies, thereby destabilizing geopolitical equilibria and enhancing their own strategic positions. Reports indicate a 35% increase in cyber espionage attempts by BRICS countries targeting Western governmental bodies since 2020.
+        </p>
+        <p>
+            Disinformation Campaigns represent another sophisticated layer of cyber threats. Utilizing social media and other digital platforms, BRICS states disseminate false narratives to destabilize public trust and influence electoral outcomes in Western democracies. These campaigns sow discord, polarize societies, and undermine the integrity of democratic institutions, creating internal divisions that weaken societal cohesion and resilience. Data from cybersecurity firms reveal that disinformation efforts by BRICS nations have influenced at least five major elections in Western countries between 2019 and 2023.
+        </p>
 
         <div class="image">
-            <img src="images/cyber-threats.png" alt="Cyber Threats from BRICS">
+            <img src="images/brics-economic-growth.png" alt="Cyber Threats from BRICS">
             <p>Figure 3: Overview of State-Sponsored Cyber Threats from BRICS Nations</p>
         </div>
 
         <h3>2. Strategic Resource Control</h3>
         <p>
-            BRICS nations are leveraging their control over critical natural resources to exert economic pressure on Western countries. Key strategies include:
+            BRICS nations are strategically leveraging their control over critical natural resources to exert economic pressure on Western countries. This control is not only a matter of economic advantage but also a strategic tool to influence global power dynamics.
         </p>
-        <ul>
-            <li><strong>Energy Dominance:</strong> Russia's control over significant natural gas and oil reserves allows it to influence energy prices and supply in Europe, creating economic dependencies that can be exploited during geopolitical tensions.</li>
-            <li><strong>Rare Earth Metals:</strong> China’s dominance in the production and export of rare earth elements essential for electronics and defense industries places Western manufacturers at a strategic disadvantage, limiting their ability to compete globally without sourcing from BRICS-controlled markets.</li>
-            <li><strong>Agricultural Commodities:</strong> Brazil's large-scale agricultural exports can impact global food prices, affecting economies reliant on food imports and creating leverage points in trade negotiations.</li>
-        </ul>
+        <p>
+            Energy Dominance, particularly Russia's control over significant natural gas and oil reserves, allows it to manipulate energy prices and supply in Europe. In 2022, Russia supplied over 45% of Europe's natural gas, giving it substantial leverage to influence European energy policies and economic stability. Such dominance creates economic dependencies that can be exploited during geopolitical tensions, enabling BRICS nations to wield substantial influence over energy-importing Western countries.
+        </p>
+        <p>
+            China's dominance in the production and export of rare earth metals is another critical aspect of strategic resource control. Rare earth elements are essential for the production of electronics, defense systems, and renewable energy technologies. China controls approximately 80% of global rare earth production, limiting Western manufacturers' ability to compete globally without sourcing these vital materials from BRICS-controlled markets. This monopoly not only hampers Western technological advancements but also grants BRICS nations significant bargaining power in trade negotiations.
+        </p>
+        <p>
+            Additionally, Brazil's extensive agricultural exports allow it to impact global food prices significantly. With Brazil being one of the top exporters of soybeans, coffee, and beef, fluctuations in Brazilian agricultural output can lead to global price volatility. In 2023, Brazil's soybean exports alone accounted for 25% of the global supply, making Western economies reliant on BRICS-controlled agricultural markets. This control provides BRICS with leverage points in trade negotiations and the ability to influence global food security dynamics.
+        </p>
 
         <div class="highlight">
-            <strong>Technical Insight:</strong> The strategic control of essential resources by BRICS nations not only impacts global supply chains but also provides these countries with leverage to influence economic policies and geopolitical alliances of Western nations. This control can lead to increased vulnerability of Western economies to resource-based coercion and manipulation.
+            <strong>Technical Insight:</strong> The strategic control of essential resources by BRICS nations not only disrupts global supply chains but also grants these countries significant leverage to influence economic policies and geopolitical alliances of Western nations. This control can lead to increased vulnerability of Western economies to resource-based coercion and manipulation, undermining economic sovereignty and strategic autonomy.
         </div>
 
         <h3>3. Technological Standards and Infrastructure Control</h3>
         <p>
-            BRICS is actively involved in setting technological standards and developing critical infrastructure projects that align with their strategic interests:
+            BRICS is actively involved in setting technological standards and developing critical infrastructure projects that align with their strategic interests. This involvement ensures that the technological frameworks and standards adopted globally are conducive to BRICS' economic and political agendas.
         </p>
-        <ul>
-            <li><strong>5G Networks:</strong> China's advancements in 5G technology and infrastructure are setting global standards, potentially excluding Western technologies and companies from key markets and technological ecosystems.</li>
-            <li><strong>Digital Infrastructure:</strong> Investment in digital infrastructure projects like smart cities and blockchain-based systems positions BRICS as leaders in future technological landscapes, enabling them to influence global technological norms and practices.</li>
-            <li><strong>Global Internet Governance:</strong> Participation in shaping international internet governance policies to reflect the interests and values of BRICS nations, potentially challenging Western-dominated frameworks and introducing alternative governance models.</li>
-        </ul>
+        <p>
+            The advancement of 5G Networks, spearheaded by China, is a prime example of BRICS' influence in setting global technological standards. By establishing dominance in 5G technology and infrastructure, BRICS nations can dictate the technological ecosystem, potentially excluding Western technologies and companies from key markets and strategic technological landscapes. As of 2023, China holds a 70% market share in global 5G infrastructure deployments, giving it significant control over the future of global communications.
+        </p>
+        <p>
+            Investment in Digital Infrastructure projects such as smart cities and blockchain-based systems positions BRICS as leaders in future technological landscapes. These projects not only enhance the technological capabilities within BRICS countries but also allow them to export their technological models and standards globally, thereby influencing international technological norms and practices. For instance, Brazil's investment of $10 billion in smart city technologies by 2023 has set a precedent for sustainable urban development, which other BRICS nations are keen to emulate.
+        </p>
+        <p>
+            Participation in shaping Global Internet Governance policies enables BRICS nations to advocate for frameworks that reflect their interests and values, challenging Western-dominated governance models. This participation can lead to the introduction of alternative governance structures that prioritize BRICS' strategic objectives, potentially undermining the authority and influence of Western-led internet governance bodies. The United Nations' proposed new Internet Governance Forum (IGF) charter, influenced heavily by BRICS countries, aims to create a more inclusive and multipolar governance structure.
+        </p>
     </section>
 
     <section id="conclusion">
